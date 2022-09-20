@@ -1,3 +1,4 @@
+from multiprocessing.connection import Client
 import random
 import discord
 from discord.ext import commands
@@ -47,6 +48,7 @@ async def on_ready():
 async def mandar_oi(ctx, *expression):
     expression = ''.join(expression)
     result = dado(expression)
-    await ctx.send(f'{result[0]} | {result[1]} | {result[2]}')
+    await ctx.reply(f'{result[0]} | {result[1]} | {result[2]}')
 
-bot.run("NDY0NjEyMDk3MjM4NzYxNDcz.GYlqsK.Iasw8NpTBInbHxLjd50OsX9KgoKQDj86vgPX7I")
+
+bot.run("NDY0NjEyMDk3MjM4NzYxNDcz.GfIrsd.3u8Lys5dmxJfx2qk4r6ZgitD9FUn-OFXKUZcCk")
